@@ -2,17 +2,18 @@
 package com.shevliakov.superquest.dao.impl;
 
 import com.shevliakov.superquest.dao.Dao;
-import com.shevliakov.superquest.entity.Picture;
+import com.shevliakov.superquest.entity.Story;
 import java.util.List;
 
-public class PictureImpl implements Dao<Picture> {
+public class StoryImpl implements Dao<Story> {
+
     @Override
-    public List<Picture> getAll() {
+    public List<Story> getAll() {
         return null;
     }
 
     @Override
-    public Picture getById(int id) {
+    public Story getById(int id) {
         return null;
     }
 }

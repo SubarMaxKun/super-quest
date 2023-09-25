@@ -17,7 +17,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "images")
+@Table(name = "story_1")
 @NoArgsConstructor(force = true)
 @RequiredArgsConstructor
 @AllArgsConstructor
@@ -25,13 +25,33 @@ import lombok.ToString;
 @Builder
 @Setter
 @Getter
-public class Picture {
+public class Story {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
     @NonNull
-    @Column(name = "image")
-    String image;
+    @Column(name = "dialog")
+    String dialog;
+
+    @NonNull
+    @Column(name = "options")
+    String options;
+
+    @NonNull
+    @Column(name = "correct_option")
+    String correctOption;
+
+    @NonNull
+    @Column(name = "correct_option_dialog")
+    String correctOptionDialog;
+
+    @NonNull
+    @Column(name = "wrong_option_dialog")
+    String wrongOptionDialog;
+
+    @NonNull
+    @Column(name = "image_id")
+    int imageId;
 }
