@@ -17,7 +17,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "story_1")
+@Table(name = "story1")
 @NoArgsConstructor(force = true)
 @RequiredArgsConstructor
 @AllArgsConstructor
@@ -42,20 +42,4 @@ public class Story {
     @NonNull
     @Column(name = "correct_option")
     String correctOption;
-
-    @NonNull
-    @Column(name = "correct_option_dialog")
-    int correctOptionDialog;
-
-    @NonNull
-    @Column(name = "wrong_option_dialog")
-    int wrongOptionDialog;
-
-    @NonNull
-    @Column(name = "image_id")
-    int imageId;
-
-    @NonNull
-    @Column(name = "wrong_end")
-    boolean wrongEnd;
 }
