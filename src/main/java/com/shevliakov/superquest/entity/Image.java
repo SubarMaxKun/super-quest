@@ -25,13 +25,17 @@ import lombok.ToString;
 @Builder
 @Setter
 @Getter
-public class Picture {
+public class Image {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
     @NonNull
+    @Column(name = "image_name")
+    String imageName;
+
+    @NonNull
     @Column(name = "image")
-    String image;
+    String imageText;
 }

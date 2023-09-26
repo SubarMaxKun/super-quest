@@ -45,13 +45,17 @@ public class Story {
 
     @NonNull
     @Column(name = "correct_option_dialog")
-    String correctOptionDialog;
+    int correctOptionDialog;
 
     @NonNull
     @Column(name = "wrong_option_dialog")
-    String wrongOptionDialog;
+    int wrongOptionDialog;
 
     @NonNull
     @Column(name = "image_id")
     int imageId;
+
+    @NonNull
+    @Column(name = "wrong_end")
+    boolean wrongEnd;
 }
